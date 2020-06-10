@@ -192,9 +192,9 @@ competencias
 }
 
 #competencias .comp p{
-	border-left:2px solid black;
-	border-right:2px solid black;
-	border-bottom: 2px solid black;
+	border-left:5px groove black;
+	border-right:5px groove black;
+	border-bottom: 5px groove black;
 	border-radius: 20%;
 	margin-top: 0;
 	font-family: "oxygen", "montserrat", cursive;
@@ -203,9 +203,93 @@ competencias
 	line-height: 1.5;
 }
 
+.comp img:hover{
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+.comp img{
+	border:10px groove #32CD32;
+}
 
+/*
+Hobby
+*/
 
+#hobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 100%;
+}
+#hobby h2 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+.hobby{
+	width: 80%;
+	align-items: center;
+	text-align: center;
+}
+.hobby h3{
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 14px;
+}
 
+/*
+contato
+*/
+
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #32CD32; 
+	width: 100%;
+}
+#contato h2{
+	margin-left: 20px;
+	margin-width: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+	color:#000;
+}
+#contato > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: #000;
+	text-align: center;
+}
+#contato a{
+	text-decoration: none;
+	color: #00008B;
+	font-family: "oxygen", "montserrat", cursive;
+	text-align: center;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+	text-align: center;
+	width: 100%;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
 
 
 
@@ -296,5 +380,23 @@ header{
 			text-align: center;
 		}
 
+		/*
+		CONTATO
+		*/
+		#contato {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			max-width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			max-height: 40vh;
+			width: 100%;
+		}
+		#contato h2,
+		#contato p{
+			width: 100%;
+			text-align: center;
+		}
 
 
